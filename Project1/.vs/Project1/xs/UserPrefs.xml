@@ -1,0 +1,27 @@
+﻿<Properties StartupConfiguration="{4337845C-AE72-4339-8553-7A407FC06395}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.Project1 PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Project1/Olympics.cs">
+    <Files>
+      <File FileName="Project1/Olympics.cs" Line="135" Column="25" />
+      <File FileName="Project1/Participant.cs" Line="36" Column="10" />
+      <File FileName="Project1/olympics.tsv" Line="7" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Project1">
+            <Node name="Project1">
+              <Node name="Olympics.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+</Properties>
