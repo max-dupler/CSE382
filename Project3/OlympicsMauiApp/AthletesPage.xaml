@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:OlympicsMauiApp;assembly=OlympicsMauiApp"
+             x:Class="OlympicsMauiApp.AthletesPage">
+    <VerticalStackLayout Spacing="20">
+        <Grid x:Name="gridDisplay" Padding="0,40,0,0" HeightRequest="600" RowSpacing="20" ColumnSpacing="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="3*"/>
+            </Grid.ColumnDefinitions>
+            <ListView x:Name="Countries" VerticalScrollBarVisibility="Always" SelectedItem="United States" Grid.Row="0" Grid.Column="0" ItemSelected="itemSelected"/>
+            <ListView x:Name="Events" VerticalScrollBarVisibility="Always" SelectedItem="Athletics Men's 1,500 metres" Grid.Row="0" Grid.Column="1" Grid.RowSpan="2" ItemSelected="itemSelected"/>     
+            <ListView x:Name="Sports" VerticalScrollBarVisibility="Always" SelectedItem="Athletics" Grid.Row="1" Grid.Column="0" ItemSelected="itemSelected"/>
+        </Grid>
+        <ListView x:Name="Athletes" VerticalScrollBarVisibility="Always" HeightRequest="300">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Tapped="ViewCell_Tapped">
+                        <StackLayout Orientation="Horizontal" Spacing="10">
+                            <Image Source="{Binding MedalImage}" HeightRequest="20" WidthRequest="20"/>
+                            <Label Text="{Binding Name}" VerticalOptions="CenterAndExpand" TextColor="{Binding TextColor}"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </VerticalStackLayout>
+</ContentPage>

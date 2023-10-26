@@ -1,0 +1,33 @@
+﻿<Properties StartupConfiguration="{FA3DB331-07A1-42CC-988B-14FF2872228A}|Default">
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.68" />
+  <MonoDevelop.Ide.ItemProperties.OlympicsMauiApp PreferredExecutionTarget="MyAppleMacCatalystID" Xamarin.HotReload.DebuggerTimeoutException.OlympicsMauiApp.HideInfoBar="True" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="OlympicsMauiApp/Participant2016Summer.cs">
+    <Files>
+      <File FileName="OlympicsMauiApp/AthletesPage.xaml" Line="17" Column="164" />
+      <File FileName="OlympicsMauiApp/AthletesPage.xaml.cs" Line="27" Column="43" />
+      <File FileName="OlympicsMauiApp/DB.cs" />
+      <File FileName="OlympicsMauiApp/MauiProgram.cs" />
+      <File FileName="OlympicsMauiApp/Participant2016Summer.cs" Line="57" Column="5" />
+      <File FileName="OlympicsMauiApp/olympics2016.tsv" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="OlympicsMauiApp">
+            <Node name="OlympicsMauiApp">
+              <Node name="AthletesPage.xaml" expanded="True" />
+              <Node name="Participant2016Summer.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>
