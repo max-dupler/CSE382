@@ -1,0 +1,39 @@
+﻿<Properties StartupConfiguration="{DEEFAB21-6D2B-40FE-ACD9-EE29E1878124}|Default">
+  <MonoDevelop.Ide.ItemProperties.NHLTrack Xamarin.HotReload.DebuggerTimeoutException.NHLTrack.HideInfoBar="True" PreferredExecutionTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="NHLTrack/Rosters.xaml.cs">
+    <Files>
+      <File FileName="NHLTrack/MainPage.xaml.cs" Line="46" Column="4" />
+      <File FileName="NHLTrack/RestService.cs" Line="1" Column="1" />
+      <File FileName="NHLTrack/DB.cs" Line="1" Column="1" />
+      <File FileName="NHLTrack/Teams.csv" Line="1" Column="1" />
+      <File FileName="NHLTrack/Team.cs" Line="1" Column="1" />
+      <File FileName="NHLTrack/ScoreData.cs" Line="1" Column="1" />
+      <File FileName="NHLTrack/Rosters.xaml.cs" Line="7" Column="69" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="NHLTrack" expanded="True">
+            <Node name="NHLTrack" expanded="True">
+              <Node name="App.xaml" expanded="True" />
+              <Node name="AppShell.xaml" expanded="True" />
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="PlayerPage.xaml" expanded="True" />
+              <Node name="Prefs.xaml" expanded="True" />
+              <Node name="Rosters.xaml" expanded="True" />
+              <Node name="TeamRosterPage.xaml" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MyAppleMacCatalystID" />
+  <MonoDevelop.MonoDroid LastDeploySdkVersion="33.0.68" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

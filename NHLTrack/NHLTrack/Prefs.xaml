@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NHLTrack.Prefs"
+             Title="Prefs">
+    <VerticalStackLayout>
+        <HorizontalStackLayout Spacing="20" Padding="10,10,10,10">
+            <Label Text="Favorite Team:" FontSize="Subtitle" VerticalTextAlignment="Center"/>
+            <Picker x:Name="teamPicker" SelectedIndexChanged="teamPicker_SelectedIndexChanged"
+                    WidthRequest="150" HorizontalTextAlignment="Center"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="20" Padding="10,10,10,10">
+            <Label Text="Time Zone:" FontSize="Subtitle" VerticalTextAlignment="Center"/>
+            <Picker x:Name="timeZonePicker" VerticalOptions="Center" WidthRequest="150"
+                    HorizontalTextAlignment="Center" SelectedIndexChanged="timeZonePicker_SelectedIndexChanged"/>
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>

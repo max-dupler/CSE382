@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:drawables="clr-namespace:Graphics.Drawables"
+             x:Class="NHLTrack.PlayerPage"
+             Title="PlayerPage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="FontSize" Value="16" />
+            </Style>
+        </ResourceDictionary>
+        <drawables:PlottingDrawable x:Key="plottingDrawable"/>
+    </ContentPage.Resources>
+    <VerticalStackLayout Spacing="10">
+        <Label Text="{Binding FullName}" FontSize="Title" HorizontalOptions="Center"/>
+         <Frame WidthRequest="120" HeightRequest="120"
+               BackgroundColor="LightGray">
+            <Image Source="{Binding Headshot}" Aspect="AspectFill"
+                   WidthRequest="120" HeightRequest="120" />
+        </Frame>
+        <Grid Padding="10,0,10,0" HorizontalOptions="Center" ColumnSpacing="10">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Label Grid.Row="0" Grid.Column="0" Text="Height: "/>
+            <Label Grid.Row="1" Grid.Column="0" Text="Weight: "/>
+            <Label Grid.Row="2" Grid.Column="0" Text="Handedness: "/>
+            <Label Grid.Row="0" Grid.Column="2" Text="Birthday: "/>
+            <Label Grid.Row="1" Grid.Column="2" Text="Birth Place: "/>
+            <Label Grid.Row="2" Grid.Column="2" Text="Birth Country "/>
+            <Label Grid.Row="0" Grid.Column="1" Text="{Binding Height}"/>
+            <Label Grid.Row="1" Grid.Column="1" Text="{Binding Weight}"/>
+            <Label Grid.Row="2" Grid.Column="1" Text="{Binding Handedness}"/>
+            <Label Grid.Row="0" Grid.Column="3" Text="{Binding BirthDate}"/>
+            <Label Grid.Row="1" Grid.Column="3" Text="{Binding BirthCity.Default}"/>
+            <Label Grid.Row="2" Grid.Column="3" Text="{Binding BirthCountry}"/>
+        </Grid>
+        <GraphicsView Drawable="{StaticResource plottingDrawable}" x:Name="statGraphic"
+                            WidthRequest="300" HeightRequest="300"
+                            HorizontalOptions="Center"/>
+        <Label Text="Season Stats" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

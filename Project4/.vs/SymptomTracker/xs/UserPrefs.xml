@@ -1,0 +1,36 @@
+﻿<Properties StartupConfiguration="{E7CE6576-C89A-4DF6-BC55-17110EE20465}|Default">
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.SymptomTracker PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AFD14C92-D4D5-4A73-A1CF-8F6A2B23952A" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SymptomTracker/ModifyPage.xaml.cs">
+    <Files>
+      <File FileName="SymptomTracker/MauiProgram.cs" />
+      <File FileName="SymptomTracker/MainPage.xaml" />
+      <File FileName="SymptomTracker/MainPage.xaml.cs" />
+      <File FileName="SymptomTracker/DB.cs" Line="41" Column="37" />
+      <File FileName="SymptomTracker/Symptom.cs" />
+      <File FileName="SymptomTracker/Platforms/iOS/Program.cs" />
+      <File FileName="SymptomTracker/ModifyPage.xaml.cs" Line="58" Column="6" />
+      <File FileName="SymptomTracker/ModifyPage.xaml" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SymptomTracker" expanded="True">
+            <Node name="SymptomTracker" expanded="True">
+              <Node name="MainPage.xaml" expanded="True" />
+              <Node name="ModifyPage.xaml" expanded="True">
+                <Node name="ModifyPage.xaml.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <Xamarin.Addins.Core.Project ActiveDebugTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.AFD14C92-D4D5-4A73-A1CF-8F6A2B23952A" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

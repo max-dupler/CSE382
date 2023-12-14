@@ -1,0 +1,139 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFrameworks>net7.0-android;net7.0-ios;net7.0-maccatalyst</TargetFrameworks>
+		<TargetFrameworks Condition="$([MSBuild]::IsOSPlatform('windows'))">$(TargetFrameworks);net7.0-windows10.0.19041.0</TargetFrameworks>
+		<!-- Uncomment to also build the tizen app. You will need to install tizen by following this: https://github.com/Samsung/Tizen.NET -->
+		<!-- <TargetFrameworks>$(TargetFrameworks);net7.0-tizen</TargetFrameworks> -->
+		<OutputType>Exe</OutputType>
+		<RootNamespace>NHLTrack</RootNamespace>
+		<UseMaui>true</UseMaui>
+		<SingleProject>true</SingleProject>
+		<ImplicitUsings>enable</ImplicitUsings>
+
+		<!-- Display name -->
+		<ApplicationTitle>NHLTrack</ApplicationTitle>
+
+		<!-- App Identifier -->
+		<ApplicationId>com.companyname.nhltrack</ApplicationId>
+		<ApplicationIdGuid>606bf7b8-1ad0-45e1-9500-a0f71c0951fa</ApplicationIdGuid>
+
+		<!-- Versions -->
+		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
+		<ApplicationVersion>1</ApplicationVersion>
+
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'ios'">11.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'maccatalyst'">13.1</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'android'">21.0</SupportedOSPlatformVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</SupportedOSPlatformVersion>
+		<TargetPlatformMinVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'windows'">10.0.17763.0</TargetPlatformMinVersion>
+		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<ItemGroup>
+		<!-- App Icon -->
+		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
+
+		<!-- Splash Screen -->
+		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
+
+		<!-- Images -->
+		<MauiFont Include="Resources\Fonts\*" />
+
+		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
+		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
+		<PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+		<PackageReference Include="SQLitePCLRaw.core" Version="2.1.7" />
+		<PackageReference Include="SQLitePCLRaw.provider.e_sqlite3" Version="2.1.7" />
+		<PackageReference Include="SQLitePCLRaw.provider.dynamic_cdecl" Version="2.1.7" />
+		<PackageReference Include="SQLitePCLRaw.bundle_green" Version="2.1.7" />
+		<PackageReference Include="sqlite-net-pcl" Version="1.8.116" />
+		<PackageReference Include="SQLiteNetExtensions.Async" Version="2.1.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\Images\Teams\VGK.png" />
+	  <None Remove="Resources\Images\Teams\CBJ.png" />
+	  <None Remove="Resources\Images\Teams\ANA.png" />
+	  <None Remove="Resources\Images\Teams\ARI.png" />
+	  <None Remove="Resources\Images\Teams\BOS.png" />
+	  <None Remove="Resources\Images\Teams\BUF.png" />
+	  <None Remove="Resources\Images\Teams\CGY.png" />
+	  <None Remove="Resources\Images\Teams\CAR.png" />
+	  <None Remove="Resources\Images\Teams\CHI.png" />
+	  <None Remove="Resources\Images\Teams\COL.png" />
+	  <None Remove="Resources\Images\Teams\DAL.png" />
+	  <None Remove="Resources\Images\Teams\DET.png" />
+	  <None Remove="Resources\Images\Teams\EDM.png" />
+	  <None Remove="Resources\Images\Teams\FLA.png" />
+	  <None Remove="Resources\Images\Teams\LAK.png" />
+	  <None Remove="Resources\Images\Teams\MIN.png" />
+	  <None Remove="Resources\Images\Teams\MTL.png" />
+	  <None Remove="Resources\Images\Teams\NSH.png" />
+	  <None Remove="Resources\Images\Teams\NJD.png" />
+	  <None Remove="Resources\Images\Teams\NYI.png" />
+	  <None Remove="Resources\Images\Teams\NYR.png" />
+	  <None Remove="Resources\Images\Teams\OTT.png" />
+	  <None Remove="Resources\Images\Teams\PHI.png" />
+	  <None Remove="Resources\Images\Teams\PIT.png" />
+	  <None Remove="Resources\Images\Teams\SJS.png" />
+	  <None Remove="Resources\Images\Teams\STL.png" />
+	  <None Remove="Resources\Images\Teams\TBL.png" />
+	  <None Remove="Resources\Images\Teams\TOR.png" />
+	  <None Remove="Resources\Images\Teams\VAN.png" />
+	  <None Remove="Resources\Images\Teams\WSH.png" />
+	  <None Remove="Resources\Images\Teams\WPG.png" />
+	  <None Remove="Resources\Images\Teams\SEA.png" />
+	  <None Remove="Resources\.DS_Store" />
+	  <None Remove="Resources\Images\.DS_Store" />
+	  <None Remove="Resources\Images\Teams\.DS_Store" />
+	  <None Remove="Teams.csv" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\Teams\VGK.png" />
+	  <BundleResource Include="Resources\Images\Teams\CBJ.png" />
+	  <BundleResource Include="Resources\Images\Teams\ANA.png" />
+	  <BundleResource Include="Resources\Images\Teams\ARI.png" />
+	  <BundleResource Include="Resources\Images\Teams\BOS.png" />
+	  <BundleResource Include="Resources\Images\Teams\BUF.png" />
+	  <BundleResource Include="Resources\Images\Teams\CGY.png" />
+	  <BundleResource Include="Resources\Images\Teams\CAR.png" />
+	  <BundleResource Include="Resources\Images\Teams\CHI.png" />
+	  <BundleResource Include="Resources\Images\Teams\COL.png" />
+	  <BundleResource Include="Resources\Images\Teams\DAL.png" />
+	  <BundleResource Include="Resources\Images\Teams\DET.png" />
+	  <BundleResource Include="Resources\Images\Teams\EDM.png" />
+	  <BundleResource Include="Resources\Images\Teams\FLA.png" />
+	  <BundleResource Include="Resources\Images\Teams\LAK.png" />
+	  <BundleResource Include="Resources\Images\Teams\MIN.png" />
+	  <BundleResource Include="Resources\Images\Teams\MTL.png" />
+	  <BundleResource Include="Resources\Images\Teams\NSH.png" />
+	  <BundleResource Include="Resources\Images\Teams\NJD.png" />
+	  <BundleResource Include="Resources\Images\Teams\NYI.png" />
+	  <BundleResource Include="Resources\Images\Teams\NYR.png" />
+	  <BundleResource Include="Resources\Images\Teams\OTT.png" />
+	  <BundleResource Include="Resources\Images\Teams\PHI.png" />
+	  <BundleResource Include="Resources\Images\Teams\PIT.png" />
+	  <BundleResource Include="Resources\Images\Teams\SJS.png" />
+	  <BundleResource Include="Resources\Images\Teams\STL.png" />
+	  <BundleResource Include="Resources\Images\Teams\TBL.png" />
+	  <BundleResource Include="Resources\Images\Teams\TOR.png" />
+	  <BundleResource Include="Resources\Images\Teams\VAN.png" />
+	  <BundleResource Include="Resources\Images\Teams\WSH.png" />
+	  <BundleResource Include="Resources\Images\Teams\WPG.png" />
+	  <BundleResource Include="Resources\Images\Teams\SEA.png" />
+	  <BundleResource Include="Resources\.DS_Store" />
+	  <BundleResource Include="Resources\Images\.DS_Store" />
+	  <BundleResource Include="Resources\Images\Teams\.DS_Store" />
+	</ItemGroup>
+	<ItemGroup>
+	  <EmbeddedResource Include="Teams.csv" />
+	</ItemGroup>
+</Project>

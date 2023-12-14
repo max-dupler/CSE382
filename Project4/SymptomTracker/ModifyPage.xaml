@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SymptomTracker.ModifyPage"
+             Title="ModifyPage">
+    <VerticalStackLayout Spacing="10">
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="Date: "/>
+            <DatePicker x:Name="datePicker"/>
+        </HorizontalStackLayout>
+        <HorizontalStackLayout Spacing="10">
+            <Label Text="Time"/>
+            <TimePicker x:Name="timePicker"/>
+        </HorizontalStackLayout>
+        <Picker x:Name="intensityPicker" SelectedIndex="0">
+            <Picker.Items>
+                <x:String>1</x:String>
+                <x:String>2</x:String>
+                <x:String>3</x:String>
+                <x:String>4</x:String>
+                <x:String>5</x:String>
+                <x:String>6</x:String>
+                <x:String>7</x:String>
+                <x:String>8</x:String>
+                <x:String>9</x:String>
+                <x:String>10</x:String>
+            </Picker.Items>
+        </Picker>
+        <Entry x:Name="noteEntry" HeightRequest="100" Placeholder="Notes here" HorizontalTextAlignment="Start" VerticalTextAlignment="Center"/>
+        <Button x:Name="addModifyButton" Text="Add" Clicked="addModifyButton_Clicked"/>
+        <Button Text="Cancel" Clicked="cancelButton_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,69 @@
+is_global = true
+build_property.TargetFramework = net7.0-android
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = false
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.EnableAotAnalyzer = 
+build_property.EnableSingleFileAnalyzer = true
+build_property.EnableTrimAnalyzer = false
+build_property.IncludeAllContentForSelfExtract = 
+build_property.RootNamespace = NHLTrack
+build_property.ProjectDir = /Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/
+
+[/Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/App.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NHLTrack.App.xaml
+build_metadata.AdditionalFiles.TargetPath = App.xaml
+build_metadata.AdditionalFiles.RelativePath = App.xaml
+
+[/Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/AppShell.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NHLTrack.AppShell.xaml
+build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
+build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
+
+[/Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/MainPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NHLTrack.MainPage.xaml
+build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
+build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
+
+[/Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/PlayerPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NHLTrack.PlayerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = PlayerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = PlayerPage.xaml
+
+[/Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/Prefs.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NHLTrack.Prefs.xaml
+build_metadata.AdditionalFiles.TargetPath = Prefs.xaml
+build_metadata.AdditionalFiles.RelativePath = Prefs.xaml
+
+[/Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/Resources/Styles/Colors.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NHLTrack.Resources.Styles.Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+
+[/Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/Resources/Styles/Styles.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NHLTrack.Resources.Styles.Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+
+[/Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/Rosters.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NHLTrack.Rosters.xaml
+build_metadata.AdditionalFiles.TargetPath = Rosters.xaml
+build_metadata.AdditionalFiles.RelativePath = Rosters.xaml
+
+[/Users/maxdupler/Downloads/CSE382/cse382_duplermj/NHLTrack/NHLTrack/TeamRosterPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = NHLTrack.TeamRosterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = TeamRosterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = TeamRosterPage.xaml

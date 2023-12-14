@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NHLTrack.Rosters"
+             Title="Rosters">
+    <VerticalStackLayout Padding="10, 0, 10, 0">
+        <Label FontSize="Title" Text="Teams" HorizontalOptions="Center"/>
+        <ListView x:Name="teamsLV" VerticalScrollBarVisibility="Always" HeightRequest="700" ItemTapped="teamsLV_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout Orientation="Horizontal" Padding="10">
+                            <Image Source="{Binding TeamLogo}" WidthRequest="40" HeightRequest="40" />
+                            <Label Text="{Binding Name}" FontAttributes="Bold" FontSize="Large" Padding="10,0,0,0"/>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+    </VerticalStackLayout>
+</ContentPage>
